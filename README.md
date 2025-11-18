@@ -77,7 +77,23 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+#define PI 3.14159    // Macro constant
+
+int main() {
+    const int AGE = 21;   // Constant variable
+
+    printf("Value of macro constant PI: %f\n", PI);
+    printf("Value of constant variable AGE: %d\n", AGE);
+
+    return 0;
+}
+```
 # Output:
+<img width="406" height="131" alt="Screenshot 2025-11-18 211948" src="https://github.com/user-attachments/assets/fdfadb45-c8da-4e11-b7b5-d7b76825da1c" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -101,8 +117,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    int num = 25;             
+    float rate = 12.5f;       
+    double amount = 12345.6789; 
+    char grade = 'A';         
+
+    printf("Integer value (int): %d\n", num);
+    printf("Float value (float): %f\n", rate);
+    printf("Double value (double): %lf\n", amount);
+    printf("Character value (char): %c\n", grade);
+
+    return 0;
+}
+```
 # Output:
+<img width="390" height="193" alt="Screenshot 2025-11-18 212140" src="https://github.com/user-attachments/assets/d4c46779-7b1a-47e9-b51c-05be7071e99a" />
+
 # Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
@@ -140,7 +175,40 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+
+    if (b != 0)
+        printf("Division: %d\n", a / b);
+    else
+        printf("Division: undefined\n");
+
+    if (b != 0)
+        printf("Remainder: %d\n", a % b);
+    else
+        printf("Remainder: undefined\n");
+
+    printf("Bitwise AND: %d\n", a & b);
+    printf("Bitwise OR: %d\n", a | b);
+    printf("Bitwise XOR: %d\n", a ^ b);
+    printf("Left Shift (a<<1): %d\n", a << 1);
+    printf("Right Shift (a>>1): %d\n", a >> 1);
+    printf("NOT of a: %d\n", ~a);
+
+    return 0;
+}
+```
 # Output:
+<img width="260" height="353" alt="Screenshot 2025-11-18 212414" src="https://github.com/user-attachments/assets/88517651-a724-4e74-86d4-974353d13008" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -185,7 +253,24 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char ch = '#';
+
+    (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+        printf("Vowel") :
+    (isalpha(ch) ? printf("Consonant") :
+    (isdigit(ch) ? printf("Digit") : printf("Special Symbol")));
+
+    return 0;
+}
+```
 # Output:
+<img width="380" height="195" alt="Screenshot 2025-11-18 212615" src="https://github.com/user-attachments/assets/e9f0d805-0ccb-4e5d-8405-e4c234696036" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
